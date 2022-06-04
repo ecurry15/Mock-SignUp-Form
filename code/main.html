@@ -6,34 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUpForm</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
-
+  <div>
+<img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Winter City image" class="image">
+<h1 class="title">Ecurry</h1>
 </div>
 <main>
-  <p class="header-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+  <p class="header-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+   <br> Sign up now to get started.
 </p>
   <p class="header2">You know you want to.</p>
   <section class="input-area">
     <h1 class="slogan">Let's do this !</h1>
     <form class="form">
+      <div class="labels">
+        <label for="firstName">First Name</label>
       <input type="text" id="firstName" name="firstName">
-      <label for="firstName">First Name</label>
-      <input type="text" id="lastName" name="lastName">
-      <label for="lastName">Last Name</label>
-      <input type="email" id="email" name="email" placeholder="example@gmail.com">
-      <label for="email">Email</label>
-      <input type="text" id="phoneNumber" name="phoneNumber">
-      <label for="phoneNumber">Phone Number</label>
-      <input type="text" id="password" name="password">
-      <label for="password">Password</label>
-      <input type="text" id="confirmPassword" name="confirmPassword">
-      <label for="confirmPassword">Confirm Password</label>
+      </div>
+      <div class="labels">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+      </div>
+      <div class="labels">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+      </div>
+      <div class="labels">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" name="phoneNumber">
+      </div>
+      <div class="labels">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password">
+      </div>
+      <div class="labels">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="text" id="confirmPassword" name="confirmPassword">
+      </div>
     </form>
     <button type="submit" class="submit">Create Account</button>
   </section>
+  <footer class="footer">Already have an account? <a href="#" class="signIn">Sign in</a></footer>
+  <div class="rectangle">
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Winter City image" class="image2">
+  </div>
 </main>
 </body>
-<footer class="footer">Already have an account? <a href="#" class="signIn">Sign in</a></footer>
 </html>
