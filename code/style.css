@@ -3,103 +3,103 @@ body {
   padding: 0%;
  background-color: rgb(220, 221, 221);
 overflow: hidden;
+height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  width: 75%;
+  padding-bottom: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 main {
-  padding: 0;
-  width: 70%;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
+  overflow: hidden;
   border-radius: 10px;
-  box-shadow: .5px 3px 6px rgb(185, 185, 185);
+  box-shadow: .5px 5px 6px rgb(185, 185, 185);
   display: grid;
   grid-template-columns: .8fr 1.2fr;
-  overflow: hidden;
 }
 
 .left {
   background: linear-gradient(#6CB4EE, #0066b2);
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 0;
+  height: 100%;
 }
 
 .welcome {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.7rem;
+  font-size: 2.7vw;
   font-weight: 1000;
   text-align: center;
-  margin-top: 30%;
+  padding-top: 25%;
   margin-bottom: 0;
+  position: relative;
 }
 .info {
 color: white;
 font-family: 'Open Sans', sans-serif;
-font-size: 1.2rem;
+font-size: 1.2vw;
 text-align: center;
+padding-top: 3%;
 }
 
 .signIn {
  background-color: transparent;
-width: 220px;
-height: 50px;
-font-size: 1.3rem;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 15%;
+padding-right: 15%;
+font-size: 1.1vw;
 border-color: white;
 border-style: solid;
-border-width: 2px;
+border-width: .15vw;
 color: white;
 font-family: 'Open Sans', sans-serif;
-border-radius: 25px;
-margin-top: 5%;
-box-shadow: 0px .1px 3px rgb(0, 0, 0);
+border-radius: 30px;
+margin-top: 12%;
 }
 
 .square {
-  width: 45px;
-  height: 45px;
-  background-color: #6CB4EE;
+  width: 8%;
+  background-color: #6eb7f3;
   opacity: 1;
-transform: rotate(45deg);
-margin-top: 10%;
-margin-right: -45%;
+transform: translate(350%, 150%) rotate(45deg);
 }
 
-.triangle {
-  width: 250px;
-  height: 250px;
-  transform: rotate(80deg);
-  z-index: -1;
-  position: absolute;
-  background-color: #D2122E;
- top: -10%;
- right: 8%;
+.square:before {
+  content: "";
+ display: block;
+ padding-top: 100%;
 }
 
 
-.outer-circle {
-  transform: rotate(90deg);
-  z-index: -1;
-  position: absolute;
-  margin-top: 27.75%;
-  margin-left: 3.5%;
+.inner-circle {
+  position: relative;
+background-color: #6ab0e9;
+ width: 57%;
+  border-radius: 100%;
+  transform: translate(-85%, 20%);
+ z-index: 1;
+ opacity: .6;
 }
 
-.circle {
-  margin-top: 5%;
-  margin-left: -60%;
-  transform: rotate(-90deg);
-  opacity: .5;
+.inner-circle:before {
+  content: "";
+  display: block;
+  padding-top: 90%;
 }
 
 .right {
@@ -110,60 +110,63 @@ margin-right: -45%;
 .create {
   color: #0066b2;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.5vw;
   font-weight: 1000;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 25px;
+  gap: 2.5vw;
   margin-top: 0;
   padding-top: 0;
 }
 
 .fa-facebook-f {
-  font-size: 1.2rem;
+  font-size: 1vw;
   border-style: solid;
+  border-width: .25vw;
 text-align: center;
-padding-top: 12px;
-padding-bottom: 12px;
-padding-left: 15px;
-padding-right: 15px;
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+padding-left: 2%;
+padding-right: 2%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
 }
 
 .fa-google-plus-g {
-  font-size: 1.2rem;
+  font-size: 1vw;
   border-style: solid;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-padding-right: 10px;
+  border-width: .25vw;
+  padding-top: 1.5%;
+padding-bottom: 1.5%;
+padding-left: 1.3%;
+padding-right: 1.3%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
 }
 
 .fa-linkedin-in {
-  font-size: 1.2rem;
+  font-size: 1vw;
   border-style: solid;
   text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 13px;
-padding-right: 13px;
+  border-width: .25vw;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1.6%;
+  padding-right: 1.6%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
 }
 
 .info2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1vw;
   text-align: center;
   margin-top: 5%;
 }
@@ -173,16 +176,16 @@ border-color: rgb(211, 211, 212);
   margin-right: auto;
   display: grid;
   width: 80%;
-  height: 30%;
+  height: 25%;
   grid-template-columns: 1fr 1fr;
-  row-gap: 20px;
+  row-gap: 10%;
  justify-items: center;
 }
 
 label {
   display: block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: .9vw;
 }
 
 .e {
@@ -193,21 +196,23 @@ input {
 width: 100%;
 height: 60%;
 border: none;
-background-color: rgb(243, 243, 243);
+background-color: rgb(225, 227, 235);
 font-family: 'Open Sans', sans-serif;
-font-size: 1rem;
+font-size: .9vw;
 padding-left: 4%;
 }
 
 .signUp {
-  width: 220px;
-height: 50px;
-font-size: 1.3rem;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.1vw;
 font-family: 'Open Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
-margin-top: 5%;
-border-radius: 25px;
+margin-top: 10%;
+border-radius: 35px;
 border-style: none;
 background-color: #0066b2;
 color: white;
