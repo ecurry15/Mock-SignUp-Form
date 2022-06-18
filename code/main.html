@@ -30,33 +30,34 @@
 <form action="" method="post"  class="form">
   <div class="e">
   <label for="firstName">First Name:</label>
-  <input type="text" id="firstName">
+  <input type="text" id="firstName" required>
 </div>
 <div class="e">
   <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName">
+  <input type="text" id="lastName" required>
 </div>
 <div class="e">
   <label for="email">Email:</label>
-  <input type="email" id="email">
+  <input type="email" id="email" required>
 </div>
 <div class="e">
   <label for="phone">Phone Number:</label>
-  <input type="text" id="phone">
+  <input type="number" id="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
 </div>
 <div class="e">
   <label for="password">Password:</label>
-  <input type="text" id="password">
+  <input type="password" id="password" required>
 </div>
 <div class="e">
   <label for="confirmPassword">Confirm Password:</label>
-  <input type="text" id="confirmPassword">
+  <input type="password" id="confirmPassword" required>
 </div>
-</form>
 <button type="submit" class="signUp">Sign Up</button>
+</form>
   </section>
 </main>
 </div>
 <script src="https://kit.fontawesome.com/0889b6791b.js" crossorigin="anonymous"></script>
 </body>
+<script src="script.js"></script>
 </html>

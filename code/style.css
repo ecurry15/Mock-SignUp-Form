@@ -206,10 +206,10 @@ padding-left: 4%;
 }
 
 .signUp {
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  padding-left: 12%;
+  padding-right: 12%;
   font-size: 1.1vw;
 font-family: 'Open Sans', sans-serif;
   margin-left: auto;
@@ -220,11 +220,12 @@ border-style: none;
 background-color: #0066b2;
 color: white;
 box-shadow: .5px 2px 6px rgb(185, 185, 185);
+grid-column: span 2;
 }
 
 /* Hovers */
 .signIn:hover {
-box-shadow: inset 9.8vw 0 0 0 white;
+box-shadow: inset 9.8vw 0 0 0 white, .3px .5px 6px rgb(65, 65, 65);
 color: #0066b2;
 }
 
@@ -233,10 +234,10 @@ color: #0066b2;
   color: #0066b2;
   border-style: solid;
   border-color: #0066b2;
-  padding-top: 1.15%;
-  padding-bottom: 1.15%;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .fa-facebook-f:hover {
@@ -247,4 +248,23 @@ color: #0066b2;
 }
 .fa-linkedin-in:hover {
   border-color: #0066b2;
+}
+
+input:focus {
+  outline-color: #0066b2;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:invalid {
+  outline-color: red;
+}
+
+input:valid {
+  outline-color: #0066b2;
 }
