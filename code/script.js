@@ -18,7 +18,7 @@ passwordValue = password.value;
 if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(passwordValue)) {
   password.setCustomValidity("");
 } else {
-  password.setCustomValidity("password must be 8 characters long and include numbers and letters");
+  password.setCustomValidity("password must be 8 characters long and include atleast 1Uppercase, 1lowercase, and 1 number");
 }
 });
 
