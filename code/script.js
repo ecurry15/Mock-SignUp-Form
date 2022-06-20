@@ -1,8 +1,14 @@
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirmPassword");
-const signIn = document.querySelector(".signIn");
 let passwordValue = '';
+const confirmPassword = document.getElementById("confirmPassword");
+const contentWrapper = document.querySelector('.main');
+const leftSideOne = document.querySelector('.left');
+const signIn = document.querySelector(".signIn");
+const leftSideTwo = document.querySelector('.left2');
+const rightSideOne = document.querySelector('.right');
+const rightSideTwo = document.querySelector('.right2');
+const signUp = document.querySelector('.signUp2');
 
 phone.addEventListener('keyup', function() {
   let phoneValue = '';
@@ -33,5 +39,18 @@ if (cPassword != passwordValue) {
 });
 
 signIn.addEventListener('click', function() {
-  console.log("c");
-})
+  contentWrapper.style.gridTemplateColumns = "1.2fr .8fr";
+  leftSideOne.id = "nonActive";
+  rightSideOne.id = "nonActive";
+  leftSideTwo.removeAttribute('id');
+  rightSideTwo.removeAttribute('id');
+});
+
+signUp.addEventListener('click', function() {
+  contentWrapper.style.gridTemplateColumns = ".8fr 1.2fr";
+  leftSideOne.removeAttribute('id');
+  rightSideOne.removeAttribute('id');
+  leftSideTwo.id = "nonActive";
+  rightSideTwo.id = "nonActive";
+});
+
