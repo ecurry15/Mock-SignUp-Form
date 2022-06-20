@@ -1,6 +1,7 @@
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
 let passwordValue = '';
+let cPassword = '';
 const confirmPassword = document.getElementById("confirmPassword");
 const contentWrapper = document.querySelector('.main');
 const leftSideOne = document.querySelector('.left');
@@ -8,7 +9,8 @@ const signIn = document.querySelector(".signIn");
 const leftSideTwo = document.querySelector('.left2');
 const rightSideOne = document.querySelector('.right');
 const rightSideTwo = document.querySelector('.right2');
-const signUp = document.querySelector('.signUp2');
+signUpOne = document.querySelector('.signUp');
+const signUpTwo = document.querySelector('.signUp2');
 
 phone.addEventListener('keyup', function() {
   let phoneValue = '';
@@ -30,7 +32,7 @@ if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(passwordValue)) {
 });
 
 confirmPassword.addEventListener('keyup', function() {
-let cPassword = confirmPassword.value;
+cPassword = confirmPassword.value;
 if (cPassword != passwordValue) {
   confirmPassword.setCustomValidity("Passwords do not match");
 } else {
@@ -46,7 +48,15 @@ signIn.addEventListener('click', function() {
   rightSideTwo.removeAttribute('id');
 });
 
-signUp.addEventListener('click', function() {
+signUpOne.addEventListener('click', function() {
+if (passwordValue != cPassword) {
+  confirmPassword.setCustomValidity("Passwords do not match");
+} else {
+  confirmPassword.setCustomValidity("");
+}
+});
+
+signUpTwo.addEventListener('click', function() {
   contentWrapper.style.gridTemplateColumns = ".8fr 1.2fr";
   leftSideOne.removeAttribute('id');
   rightSideOne.removeAttribute('id');
