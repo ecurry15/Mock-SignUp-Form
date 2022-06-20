@@ -1,6 +1,7 @@
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
+const signIn = document.querySelector(".signIn");
 let passwordValue = '';
 
 phone.addEventListener('keyup', function() {
@@ -30,3 +31,7 @@ if (cPassword != passwordValue) {
   confirmPassword.setCustomValidity("");
 }
 });
+
+signIn.addEventListener('click', function() {
+  console.log("c");
+})

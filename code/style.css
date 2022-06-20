@@ -26,7 +26,7 @@ main {
   border-radius: 10px;
   box-shadow: .5px 5px 6px rgb(185, 185, 185);
   display: grid;
-  grid-template-columns: .8fr 1.2fr;
+  grid-template-columns: 1.2fr .8fr;
 }
 
 .left {
@@ -123,15 +123,15 @@ background-color: #6ab0e9;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2.5vw;
+  gap: 1vw;
   margin-top: 0;
   padding-top: 0;
 }
 
 .facebook {
-  font-size: 1.1vw;
+  font-size: 1vw;
   border-style: solid;
-  border-width: .25vw;
+  border-width: .2vw;
 text-align: center;
 padding-top: 1.5%;
 padding-bottom: 1.5%;
@@ -139,32 +139,35 @@ padding-left: 2%;
 padding-right: 2%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
+color: black;
 }
 
 .google {
-  font-size: 1.1vw;
+  font-size: 1vw;
   border-style: solid;
   text-align: center;
-  border-width: .25vw;
+  border-width: .2vw;
   padding-top: 1.5%;
 padding-bottom: 1.5%;
 padding-left: 1.3%;
 padding-right: 1.3%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
+color: black;
 }
 
 .linkedIn {
-  font-size: 1.1vw;
+  font-size: 1vw;
   border-style: solid;
   text-align: center;
-  border-width: .25vw;
+  border-width: .2vw;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   padding-left: 1.7%;
   padding-right: 1.7%;
 border-radius: 35px;
 border-color: rgb(211, 211, 212);
+color: black;
 }
 
 .info2 {
@@ -185,7 +188,7 @@ border-color: rgb(211, 211, 212);
  justify-items: center;
 }
 
-label {
+.e > label {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: .9vw;
@@ -195,7 +198,7 @@ label {
 width: 80%;
 }
 
-input {
+.e > input {
 width: 100%;
 height: 60%;
 border: none;
@@ -223,6 +226,177 @@ box-shadow: .5px 2px 6px rgb(185, 185, 185);
 grid-column: span 2;
 }
 
+
+#nonActive {
+  display: none;
+}
+/*LEFT 2 CONTENT */
+.left2 {
+display: flex;
+flex-direction: column;
+}
+
+.signIn-title {
+  color: #0066b2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4vw;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: 12%;
+}
+
+.orUse {
+  font-family: 'Open Sans', sans-serif;
+font-size: .9vw;
+text-align: center;
+padding-top: 3%;
+}
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 50%;
+  align-items: center;
+  padding: 0%;
+
+}
+
+.left2Email {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+ width: 91%;
+ padding-bottom: 3%;
+ height: 18%;
+}
+
+.left2Password {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+  width: 91%;
+  padding-top: 3%;
+  height: 18%;
+}
+
+.left2Email > input {
+  width: 100%;
+height: 85%;
+border: none;
+background-color: rgb(225, 227, 235);
+font-family: 'Open Sans', sans-serif;
+font-size: .9vw;
+padding-left: 4%;
+}
+
+.left2Password > input {
+  width: 100%;
+height: 85%;
+border: none;
+background-color: rgb(225, 227, 235);
+font-family: 'Open Sans', sans-serif;
+font-size: .9vw;
+padding-left: 4%;
+}
+
+.forgotP {
+  font-family: 'Open Sans', sans-serif;
+font-size: .9vw;
+padding-top: 8%;
+text-decoration: underline;
+text-decoration-color: rgb(219, 219, 219);
+text-underline-offset: 35%;
+text-decoration-thickness: .2vw;
+color: black;
+font-weight: 600;
+}
+
+.signIn2 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+  font-size: 1.1vw;
+font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 10%;
+border-radius: 35px;
+border-style: none;
+background-color: #0066b2;
+color: white;
+box-shadow: .5px 2px 6px rgb(185, 185, 185);
+cursor: pointer;
+}
+
+/*LEFT 2 CONTENT END*/
+
+/*RIGHT 2 CONTENT */
+.right2 {
+  background: linear-gradient(#6CB4EE, #0066b2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square2 {
+  width: 0; height: 0;
+border-left: 6.5vw solid transparent;
+border-right: 6.5vw solid transparent;
+border-bottom: 19vw solid #74b3e7;
+opacity: .9;
+transform: translate(50%, -20%) rotate(-95deg);
+position: absolute;
+}
+
+.right2Title {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.7vw;
+  font-weight: 1000;
+  text-align: center;
+  padding-top: 35%;
+  margin-bottom: 0;
+}
+
+.journeyText {
+  color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.1vw;
+text-align: center;
+padding-top: 3%;
+font-weight: 550;
+}
+
+.signUp2 {
+  background-color: transparent;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 15%;
+padding-right: 15%;
+font-size: 1.1vw;
+border-color: white;
+border-style: solid;
+border-width: .15vw;
+color: white;
+font-family: 'Open Sans', sans-serif;
+border-radius: 35px;
+margin-top: 12%;
+z-index: 1;
+box-shadow: inset 0 0 0 0 rgb(220, 221, 221);
+transition: ease-out 0.15s;
+cursor: pointer;
+}
+
+.square3 {
+
+}
+
+/*RIGHT 2 CONTENT END*/
+
 /* Hovers */
 .signIn:hover {
 box-shadow: inset 9.8vw 0 0 0 white, .3px .5px 6px rgb(65, 65, 65);
@@ -238,6 +412,23 @@ color: #0066b2;
   padding-bottom: 1.5%;
   padding-left: 12%;
   padding-right: 12%;
+}
+
+.signUp2:hover {
+  box-shadow: inset 9.8vw 0 0 0 white, .3px .5px 6px rgb(65, 65, 65);
+color: #0066b2;
+}
+
+
+.signIn2:hover {
+  background-color: white;
+  color: #0066b2;
+  border-style: solid;
+  border-color: #0066b2;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 .facebook:hover {
