@@ -580,6 +580,7 @@ input:valid {
       font-size: 1.4vw;
     }
  /* Group One End*/
+
  /* Group Two*/
  .signIn-title {
   font-size: 2.9vw;
@@ -635,7 +636,8 @@ transform: translate(60%, 950%) rotate(170deg);
 }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 585px) {
+  /* Group One*/
   .wrapper {
     width: 100vw;
     height: 100vh;
@@ -742,5 +744,125 @@ padding-bottom: 3%;
   font-size: 2.2vw;
 margin-top: 5%;
 }
+/* Group One End*/
+
+/* Group Two */
+.left2 {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  }
+  
+  .signIn-title {
+    font-size: 4.5vw;
+    margin-top: 7vh;
+  }
+  
+  .orUse {
+  font-size: 2.1vw;
+  }
+
+  .signInForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: 50%;
+    align-items: center;
+    padding: 0%;
+  
+  }
+  
+  .left2Email {
+    font-size: 2vw;
+  }
+  
+  .left2Password {
+    font-size: 2vw;
+  }
+  
+  .left2Email > input {
+  font-size: 2vw;
+  }
+  
+  .left2Password > input {
+  font-size: 2vw;
+  }
+  
+  .forgotP {
+  font-size: 2vw;
+  text-decoration-thickness: .5vw;
+  }
+  
+  .signIn2 {
+    font-size: 2.2vw;
+  }
+
+  .right2 {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .square2 {
+  border-left: 8vw solid transparent;
+  border-right: 8vw solid transparent;
+  border-bottom: 30vw solid #74b3e7;
+  opacity: .4;
+  transform: translate(0, 0) rotate(-95deg);
+  position: relative;
+  margin-right: -50%;
+  margin-bottom: 0%;
+  }
+  
+  .right2Title {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5.2vw;
+    font-weight: 1000;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: -3.5vh;
+  }
+  
+  .journeyText {
+    color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.2vw;
+  text-align: center;
+  padding-top: 3%;
+  font-weight: 550;
+  }
+  
+  .signUp2 {
+    background-color: transparent;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 2vw;
+  margin-top: 10%;
+  }
+  
+  .circle2 {
+    position: relative;
+    width: 3%;
+    transform: translate(0, 0);
+    border-radius: 100%;
+    margin-left: -50%;
+  }
+
+  .triangle2 {
+    width: 0; height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-bottom: 5vw solid #74b3e7;
+  opacity: .1;
+  transform: translate(0, 0) rotate(170deg);
+  position: relative;
+  margin-right: -40%;
+  }
 
   }
