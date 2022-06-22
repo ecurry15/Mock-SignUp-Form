@@ -646,7 +646,8 @@ body {
   .wrapper {
     width: 100vw;
     height: 100%;
-    margin: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
   }
   
   .main {
