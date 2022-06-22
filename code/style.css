@@ -638,9 +638,15 @@ transform: translate(60%, 950%) rotate(170deg);
 
 @media (max-width: 585px) {
   /* Group One*/
+body {
+  background-color: white;
+}
+
+
   .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    margin: 1%;
   }
   
   .main {
