@@ -639,15 +639,16 @@ transform: translate(60%, 950%) rotate(170deg);
 @media (max-width: 585px) {
   /* Group One*/
 body {
-  background-color: white;
+background-color: #6bade4;
 }
 
 
   .wrapper {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
+    overflow-x: hidden;
   }
   
   .main {
